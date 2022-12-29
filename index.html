@@ -29,12 +29,12 @@
 </div>
 <script>
     var buildUrl = "Build";
-    var loaderUrl = buildUrl + "/webgl.loader.js";
+    var loaderUrl = buildUrl + "/WebGL.loader.js";
     var config = {
-        dataUrl: buildUrl + "/webgl.data",
-        frameworkUrl: buildUrl + "/webgl.framework.js",
-        codeUrl: buildUrl + "/webgl.wasm",
-        symbolsUrl: buildUrl + "/webgl.symbols.json",
+        dataUrl: buildUrl + "/WebGL.data",
+        frameworkUrl: buildUrl + "/WebGL.framework.js",
+        codeUrl: buildUrl + "/WebGL.wasm",
+        symbolsUrl: buildUrl + "/WebGL.symbols.json",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "TheresiaSchwartz",
         productName: "AKNS Demo",
@@ -290,13 +290,15 @@
     },
     WX_Authorize(conf, callbackId){
     },
-    WX_CheckHandoffEnabled(conf, callbackId){
-    },
     WX_CheckIsUserAdvisedToRest(conf, callbackId){
     },
     WX_CheckSession(conf, callbackId){
     },
     WX_ChooseImage(conf, callbackId){
+    },
+    WX_ChooseMedia(conf, callbackId){
+    },
+    WX_ChooseMessageFile(conf, callbackId){
     },
     WX_CloseBLEConnection(conf, callbackId){
     },
@@ -344,21 +346,13 @@
     },
     WX_GetFileInfo(conf, callbackId){
     },
-    WX_GetFriendCloudStorage(conf, callbackId){
-    },
-    WX_GetGroupCloudStorage(conf, callbackId){
-    },
     WX_GetGroupEnterInfo(conf, callbackId){
-    },
-    WX_GetGroupInfo(conf, callbackId){
     },
     WX_GetLocalIPAddress(conf, callbackId){
     },
     WX_GetLocation(conf, callbackId){
     },
     WX_GetNetworkType(conf, callbackId){
-    },
-    WX_GetPotentialFriendList(conf, callbackId){
     },
     WX_GetScreenBrightness(conf, callbackId){
     },
@@ -371,10 +365,6 @@
     WX_GetSystemInfo(conf, callbackId){
     },
     WX_GetSystemInfoAsync(conf, callbackId){
-    },
-    WX_GetUserCloudStorage(conf, callbackId){
-    },
-    WX_GetUserCloudStorageKeys(conf, callbackId){
     },
     WX_GetUserInfo(conf, callbackId){
     },
@@ -399,8 +389,6 @@
     WX_Login(conf, callbackId){
     },
     WX_MakeBluetoothPair(conf, callbackId){
-    },
-    WX_ModifyFriendInteractiveStorage(conf, callbackId){
     },
     WX_NavigateToMiniProgram(conf, callbackId){
     },
@@ -465,8 +453,6 @@
     WX_SetStatusBarStyle(conf, callbackId){
     },
     WX_SetUserCloudStorage(conf, callbackId){
-    },
-    WX_ShareMessageToFriend(conf, callbackId){
     },
     WX_ShowActionSheet(conf, callbackId){
     },
@@ -539,8 +525,6 @@
     WX_GetGameClubData(conf, callbackId){
     },
 
-    WX_RestartMiniProgram(){
-    },
     WX_RemoveStorageSync(){
     },
     WX_ReportEvent(){
@@ -552,6 +536,8 @@
     WX_ReportUserBehaviorBranchAnalytics(){
     },
     WX_ReserveChannelsLive(){
+    },
+    WX_RestartMiniProgram(){
     },
     WX_RevokeBufferURL(){
     },
